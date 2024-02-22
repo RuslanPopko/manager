@@ -1,52 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ресурс для вибору професії</title>
+    <title>Сайт</title>
     <style>
-        /* Ваш CSS код тут */
+        /* Стилі для навігаційної панелі */
+        .navbar {
+            background-color: lightblue;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between; /* Вирівнює по горизонталі */
+            align-items: center; /* Вирівнює по вертикалі */
+        }
+        .navbar a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold; /* Робимо текст жирним */
+            font-size: 30px; /* Робимо текст більшим */
+        }
+        /* Стилі для основного контенту */
+        .content {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Розміщує елементи в середині з контейнера */
+            align-items: flex-start; /* Вирівнює вертикально вгору */
+        }
+        .left-content {
+            width: 50%; /* Задає ширину лівій частині */
+        }
+        .right-content {
+            width: 50%; /* Задає ширину правій частині */
+            display: flex;
+            justify-content: flex-end; /* Розміщує елементи в правому куті */
+        }
+        .right-content img {
+            width: 100px; /* Задає ширину зображення */
+            height: 100px; /* Задає висоту зображення */
+            margin-right: 5px; /* Додає відступ справа */
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ресурс для вибору професії</h1>
-        <!-- Додайте будь-які інші елементи заголовка, які ви бажаєте -->
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#tests">Тести</a></li>
-            <li><a href="#descriptions">Описи професій</a></li>
-            <li><a href="#perspectives">Перспективи</a></li>
-            <li><a href="#examples">Приклади відомих людей</a></li>
-        </ul>
-    </nav>
-
-    
-
-    <section id="tests">
-        <h2>Тести</h2>
-        <!-- Додайте тести для вибору професії -->
-    </section>
-
-    <section id="descriptions">
-        <h2>Описи професій</h2>
-        <!-- Додайте описи професій -->
-    </section>
-
-    <section id="perspectives">
-        <h2>Перспективи</h2>
-        <!-- Додайте інформацію про перспективи вибраних професій -->
-    </section
-
-    <section id="examples">
-        <h2>Приклади відомих людей</h2>
-        <!-- Додайте приклади відомих людей у вибраних професіях -->
-    </section>
-
-    <footer>
-        <p>© 2024 Ресурс для вибору професії. Усі права захищені.</p>
-    </footer>
+    <div class="navbar">
+        <a href="#">Manager Test</a>
+        <a href="#">Відомі люди</a>
+        <a href="#">Напрямки</a>
+        <a href="#">Про нас</a>
+        <div style="display: flex; align-items: center;">
+            <img src="/images/language_icon.png" alt="Мова" style="width: 40px; height: 40px; margin-right: 5px;">
+            <a href="#">Українська</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-content">
+            <h1>Тест: Яка IT-кар’єра мені підходить?</h1>
+            <p>Готовий до кар’єрного рестарту в IT, але не знаєш, з чого почати? Задумуєшся про те, яка професія підійде твоїм навичкам та інтересам? Хочеш досягти успіху в IT, використовуючи природні таланти та попередній досвід?</p>
+            <p>Пройди цей 15-хвилинний кар’єрний тест, щоб визначити свої сильні сторони та схильності, які допоможуть розкрити власний потенціал.</p>
+            <button>Пройти тест</button>
+        </div>
+        <div class="right-content">
+            <img src="images/target.jfif" alt="Ціль">
+        </div>
+    </div>
 </body>
 </html>
