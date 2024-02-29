@@ -7,7 +7,7 @@
     <style>
         /* Стилі для навігаційної панелі */
         .navbar {
-            background-color: lightblue;
+            background-color: #c2e6fd;
             padding: 10px;
             display: flex;
             justify-content: space-between; /* Вирівнює по горизонталі */
@@ -16,13 +16,13 @@
         .navbar a {
             margin-right: 20px;
             text-decoration: none;
-            color: white;
+            color: black;
             font-weight: bold; /* Робимо текст жирним */
             font-size: 30px; /* Робимо текст більшим */
         }
         /* Стилі для основного контенту */
         .content {
-            background-color: white;
+            background-color: #c2e6fd;
             padding: 20px;
             display: flex;
             justify-content: space-between; /* Розміщує елементи в середині з контейнера */
@@ -41,17 +41,28 @@
             height: 100px; /* Задає висоту зображення */
             margin-right: 5px; /* Додає відступ справа */
         }
+        /* Стилі для кнопки Пройти тест */
+        button {
+            font-size: 24px; /* Збільшуємо розмір шрифту */
+            padding: 20px 60px; /* Збільшуємо висоту і ширину кнопки */
+            border-radius: 20px; /* Загруглюємо краї */
+            margin-top: 20px; /* Опускаємо кнопку вниз */
+            background-color: rgb(38, 186, 19); /* Задаємо червоний колір фону */
+            color: white; /* Задаємо білий колір тексту */
+            border: none; /* Видаляємо рамку */
+            cursor: pointer; /* Змінюємо курсор на показник */
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="#">Manager Test</a>
+        <a href="#">Manager-Test</a>
         <a href="#">Відомі люди</a>
         <a href="#">Напрямки</a>
-        <a href="#">Про нас</a>
+        <a href="#" style="margin-right: 200px;">Про нас</a> <!-- Додали відступ -->
         <div style="display: flex; align-items: center;">
-            <img src="/images/language_icon.png" alt="Мова" style="width: 40px; height: 40px; margin-right: 5px;">
             <a href="#">Українська</a>
+            <img src="/images/language_icon.png" alt="Мова" style="width: 50px; height: 50px; margin-right: 5px;">
         </div>
     </div>
     <div class="content">
@@ -60,9 +71,11 @@
             <p>Готовий до кар’єрного рестарту в IT, але не знаєш, з чого почати? Задумуєшся про те, яка професія підійде твоїм навичкам та інтересам? Хочеш досягти успіху в IT, використовуючи природні таланти та попередній досвід?</p>
             <p>Пройди цей 15-хвилинний кар’єрний тест, щоб визначити свої сильні сторони та схильності, які допоможуть розкрити власний потенціал.</p>
             <button>Пройти тест</button>
+            
+            
         </div>
         <div class="right-content">
-            <img src="images/target.jfif" alt="Ціль">
+            <img src="images/target.png" alt="Ціль" style="width: 500px; height: 500px; margin-right: 5px;">
         </div>
     </div>
 </body>
