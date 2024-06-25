@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <style>
+        /* Стилі для навігаційної панелі */
+        .navbar {
+            background-color: #003e81;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: rgb(220, 220, 220);
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        /* Стилі для основного контенту */
+        .content {
+            background-color: #76bcd7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .left-content {
+            width: 50%;
+        }
+        .right-content {
+            width: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .right-content img {
+            width: 700px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: 0px;
+        }
+
+        /* Стилі для кнопки Пройти тест */
+        button {
+            font-size: 24px;
+            padding: 20px 60px;
+            border-radius: 20px;
+            margin-top: 20px;
+            background-color: rgb(38, 186, 19);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Manager-Test</a>
+        <a href="profesii.html">Професії</a>
+        <a href="vidomi.html">Відомі люди</a>
+        <a href="#" style="margin-right: 400px;"></a>
+        <div style="display: flex; align-items: center;">
+            <a href="#">Українська</a>
+            <img src="images/language_icon.png" alt="Мова" style="width: 50px; height: 50px; margin-right: 5px;">
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-content">
+            <h1>Ви не знаєте, який ІТ-напрямок саме вам підходить?</h1>
+            <h3>Ви потрапили за адресою!</h3>
+            <h3>Після проходження тесту ви зможете дізнатися, який ІТ-напрямок вам ближчий до серця.</h3> 
+            <h3>Ми допоможемо вам визначитися!</h3>
+            <h3>Ваша майбутня кар'єра може початися тут!</h3>
+            <h3>Не втрачайте можливість дізнатися, де саме на вас чекає успіх!</h3>
+            <button onclick="window.open('test.html', '_blank')">Пройти тест</button>
+        </div>
+        <div class="right-content">
+            <img src="images/mountain_everest.png" alt="Ціль">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <style>
+        
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .navbar {
+            background-color: #003e81;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .navbar a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #dcdcdc;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .navbar img {
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #003e81;
+        }
+        #test-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #test-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #test-container button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        #test-container button:hover {
+            background-color: #0056b3;
+        }
+        #results-container {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #results-container h2 {
+            color: #003e81;
+        }
+        #results-container p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Manager-Test</a>
+        <a href="profesii">Професії</a>
+        <a href="vidomi.html">Відомі люди</a>
+        <a href="#" style="margin-right: 400px;"></a>
+        <div style="display: flex; align-items: center;">
+            <a href="#">Українська</a>
+            <img src="images/language_icon.png" alt="Мова">
+        </div>
+    </div>
+    <div class="container">
+        <h1>Тест для вибору професії</h1>
+        <div id="test-container"></div>
+        <div id="results-container"></div>
+    </div>
+    <script src="test.js"></script>
+    <script>
+        window.onload = function() {
+            startTest();
+        }
+    </script>
+</body>
+</html>
